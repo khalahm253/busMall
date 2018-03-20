@@ -59,9 +59,9 @@ function randomProduct() {
 
   // Test to make sure that neither random var above equal each other
   while (randomLeft === randomMiddle || randomLeft === randomRight || randomMiddle === randomRight || Product.lastDisplayed.includes(randomLeft) || Product.lastDisplayed.includes(randomMiddle) || Product.lastDisplayed.includes(randomRight)) {
-    var randomLeft = Math.floor(Math.random() * Product.allProduct.length);
-    var randomMiddle = Math.floor(Math.random() * Product.allProduct.length);
-    var randomRight = Math.floor(Math.random() * Product.allProduct.length);
+    randomLeft = Math.floor(Math.random() * Product.allProduct.length);
+    randomMiddle = Math.floor(Math.random() * Product.allProduct.length);
+    randomRight = Math.floor(Math.random() * Product.allProduct.length);
   }
 
   Product.allProduct[randomLeft].timeDisplayed += 1;
