@@ -98,7 +98,7 @@ function handleClick(e) {
   }
 
   if(Product.totalClick > 25) {
-    sectionEl.removeEventListener('click', handleClick);
+    sectionEl.addEventListener('click', handleClick);
     showResults();
   }else {
     randomProduct();
