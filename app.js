@@ -117,10 +117,8 @@ function handleClick(e) {
   if(Product.totalClick > 24) {
     //remove the event listner off the variable sectionEl which hold the html element section.
     sectionEl.removeEventListener('click', handleClick);
-    localStorage.setItem('accumualatedVotes', JSON.stringify(Product.allProduct));
-    localStorage.setItem('accumulateDisplay', JSON.stringify(Product.allProduct));
     showResults();
-    renderChart(); 
+    renderChart();
 
     //if its not greater continue with the randomProduct function that was invoked on page load.
   }else {
