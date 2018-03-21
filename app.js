@@ -120,7 +120,7 @@ function handleClick(e) {
     localStorage.setItem('accumualatedVotes', JSON.stringify(Product.allProduct));
     localStorage.setItem('accumulateDisplay', JSON.stringify(Product.allProduct));
     showResults();
-    renderChart();
+    renderChart(); 
 
     //if its not greater continue with the randomProduct function that was invoked on page load.
   }else {
