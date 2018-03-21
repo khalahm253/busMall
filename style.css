@@ -2,3 +2,7 @@ section img{
    max-width: 200px;
     text-align: center
   }
+  canvas {
+    height:400px;
+    width : 600px;
+  }
