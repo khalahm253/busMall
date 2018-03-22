@@ -31,6 +31,7 @@ function Product(filepath, name) {
   this.vote = 0;
   Product.allProduct.push(this);
 }
+
 // instances for each picture
 new Product('img/bag.jpg','bag');
 new Product('img/banana.jpg','banana');
@@ -117,6 +118,8 @@ function handleClick(e) {
   if(Product.totalClick > 24) {
     //remove the event listner off the variable sectionEl which hold the html element section.
     sectionEl.removeEventListener('click', handleClick);
+    localStorage.setItem('accumualatedVotes', JSON.stringify(Product.allProduct));
+    localStorage.setItem('accumulateDisplay', JSON.stringify(Product.allProduct));
     showResults();
     renderChart();
 
