@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <title>BussMall Products</title>
-  <link rel="stylesheet" type="text/css" href="css/reset.css">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-</head>
-<body>
-  <h1>BusMall Online Shopping Center</h1>
-  <ul id="result"></ul>
-  <section id="productSection">
-    <img id="left-pic" src="" alt="">
-    <img id="middle-pic" src="" alt="">
-    <img id="right-pic" src="" alt="">
-  </section>
-  <canvas id="placeholder" height="300px" width="600px"></canvas>
-  <script src="app.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Buss Mall Marketing</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
+  </head>
+  <body>
+    <section class="instructions" id="userInstructions">
+      <h1>WHICH ITEM DO YOU LIKE THE BEST?</h1>
+      <p>Click the image of the item you would most likely buy.</p>
+      <p>Three random pictures will appear and will cycle 25 times.</p>
+      <button id="clearButton">Reset Data</button>
+    </section>
+
+
+    <div id="selections">
+      <section id="products" class="container">
+        <img id="image1" class="left"/>
+        <img id="image2" class="center"/>
+        <img id="image3" class="right"/>
+      </section>
+    </div>
+
+    <canvas id="surveyTable" width="960px" height="400px"></canvas>
+    <ul id="list"></ul>
+
+    <script src="app.js"></script>
+  </body>
 </html>

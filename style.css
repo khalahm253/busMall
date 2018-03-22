@@ -1,8 +1,54 @@
-section img{
-   max-width: 200px;
-    text-align: center
-  }
-  canvas {
-    height:400px;
-    width : 600px;
-  }
+img {
+  border: 1px solid black;
+  float: left;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  margin: 50px 50px 50px 0px;
+  position: relative;
+}
+img:hover {
+  border: 3px solid green;
+}
+.left {
+  margin-left: 40px;
+}
+.container {
+  /*border: 2px solid black;*/
+  width: 800px;
+  height: 300px;
+  margin: 50px auto;
+}
+ul {
+  float: left;
+  list-style-type: none;
+  font-family: sans-serif;
+  line-height: 24px;
+}
+.instructions {
+  background-color: blue;
+  text-align: center;
+  border-style: groove;
+  /*border: 3px solid red;*/
+  width: 100%;
+  margin: 30px auto;
+}
+button {
+  margin: 30px auto;
+  border-style: none;
+  width: 300px;
+  height: 50px;
+  background: red;
+  color: white;
+}
+button:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
+
+canvas {
+  /*border: 1px solid black;*/
+  float: left;
+  display: inline;
+  margin: 30px auto;
+}
